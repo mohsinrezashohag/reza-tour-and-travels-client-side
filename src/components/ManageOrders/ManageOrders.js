@@ -26,26 +26,36 @@ const ManageOrders = () => {
     const handleDelete = (id) => {
         // console.log(id);
 
-        fetch(`https://eerie-monster-14864.herokuapp.com/deleteOrder/${id}`, {
-            method: 'DELETE',
-            headers: { 'content-type': 'application/json' },
-        })
-            .then(res => res.json())
-            .then((data) => {
 
-                if (data.deletedCount) {
-
-                    setIsDeleted(true)
-
-                }
-                else {
-
-                    setIsDeleted(false)
-                }
+        const confirmation = window.confirm("Are You Sure ?? Wanna Delete ⛔⛔ ")
 
 
+        if (confirmation) {
 
+            fetch(`https://eerie-monster-14864.herokuapp.com/deleteOrder/${id}`, {
+                method: 'DELETE',
+                headers: { 'content-type': 'application/json' },
             })
+                .then(res => res.json())
+                .then((data) => {
+
+                    if (data.deletedCount) {
+
+                        setIsDeleted(true)
+
+                    }
+                    else {
+
+                        setIsDeleted(false)
+                    }
+
+
+
+                })
+
+        }
+
+
 
 
     }

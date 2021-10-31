@@ -15,6 +15,7 @@ import AddPackage from './components/AddPackage/AddPackage';
 import MyOrders from './components/MyOrders/MyOrders';
 import ManageOrders from './components/ManageOrders/ManageOrders';
 import UpdateOrder from './components/UpdateOrder/UpdateOrder';
+import Error from './components/Error/Error';
 
 
 
@@ -78,6 +79,11 @@ function App() {
 
             <Route exact path="/login">
               <Login></Login>
+            </Route>
+
+
+            <Route path="*">
+              <Error></Error>
             </Route>
 
           </Switch>

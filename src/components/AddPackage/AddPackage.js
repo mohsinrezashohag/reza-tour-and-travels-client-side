@@ -26,7 +26,7 @@ const AddPackage = () => {
         <div>
             <h2 className="section-heading">add a new package</h2>
 
-            <div className="package-add">
+            <div className="package-add text-center">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input placeholder="Package Name :" {...register("name")} />
                     <br />
@@ -37,7 +37,7 @@ const AddPackage = () => {
                     <br />
                     <input placeholder="Image URL :" {...register("img")} />
                     <br />
-                    <input type="submit" />
+                    <input className="add-pack-btn" type="submit" />
                 </form>
             </div>
 

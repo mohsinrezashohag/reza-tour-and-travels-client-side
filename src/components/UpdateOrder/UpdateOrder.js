@@ -31,7 +31,7 @@ const UpdateOrder = () => {
 
                 if (data.acknowledged) {
 
-                    alert("modified done ✅");
+                    alert("Update done ✅");
                     history.push('/manageOrders')
                 }
             })

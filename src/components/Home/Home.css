@@ -1,8 +1,3 @@
-/* .home{
-    background-color: green;
-} */
-
-
 .banner{
     background: rgba(0, 0, 0, 0.2)url(../../images/banner.jpg);
     background-blend-mode: darken;
@@ -29,22 +24,32 @@
     color: black;
 }
 
-.cosult-btn{
+.see-packages-btn{
 
     background-color:var(--orange) ;
-  
+color: white;
     padding: 30px;
-    width: 200px;
+    width: 250px;
     border: none;
     border-radius: 10px;
 }
 
-.offer-text{
-    background-image: url(../../images/stephan-mahlke-lOrfvkBNEsE-unsplash.jpg);
+.offer-text-one{
+    background-image:url(../../images/cox-bazar.jpg);
     background-size: cover;
     padding: 30px;
     margin: 20px;
     border-radius: 15px;
+    color: var(--orange);
+    
+}
+.offer-text-two{
+    background-image:url(../../images/mountain.jpg);
+    background-size: cover;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    color: var(--orange);
     
 }
 

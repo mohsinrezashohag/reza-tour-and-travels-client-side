@@ -30,26 +30,24 @@ const MyOrders = () => {
     const handleDelete = (id) => {
         // console.log(id);
 
-        fetch(`https://eerie-monster-14864.herokuapp.com/deleteOrder/${id}`, {
-            method: 'DELETE',
-            headers: { 'content-type': 'application/json' },
-        })
-            .then(res => res.json())
-            .then((data) => {
+        const confirmation = window.confirm("Are Sure About Delete ⛔⛔?? ");
 
-                if (data.deletedCount) {
-
-                    setIsDeleted(true)
-
-                }
-                else {
-
-                    setIsDeleted(false)
-                }
-
-
-
+        if (confirmation) {
+            fetch(`https://eerie-monster-14864.herokuapp.com/deleteOrder/${id}`, {
+                method: 'DELETE',
+                headers: { 'content-type': 'application/json' },
             })
+                .then(res => res.json())
+                .then((data) => {
+
+                    if (data.deletedCount) {
+                        setIsDeleted(true)
+                    }
+                    else {
+                        setIsDeleted(false)
+                    }
+                })
+        }
 
 
     }
@@ -74,18 +72,15 @@ const MyOrders = () => {
                         </tr>
                     </thead>
                     <tbody>
-
-
                         {
                             myOrders.map(order =>
                                 <tr key={order?._id}>
                                     <td>{order?.Package}</td>
                                     <td>{order?.price} TK</td>
                                     <td>{order?.status === "pending" ? <p className="text-danger">Pending</p> : <p className="text-primary">Approved</p>}</td>
-                                    <td><button onClick={() => handleDelete(order?._id)} className="btn btn-danger">DELETE</button></td>
+                                    <td><button onClick={() => handleDelete(order?._id)} className="btn btn-danger"><i className="fas fa-trash-alt"></i> DELETE</button></td>
                                 </tr>)
                         }
-
                     </tbody>
                 </Table>
 

@@ -17,7 +17,7 @@ const Package = (props) => {
 
             <div className="package-text">
                 <h2>{name}</h2>
-                <p>{description}</p>
+                <p>{description.slice(0, 150)}</p>
 
             </div>
 
