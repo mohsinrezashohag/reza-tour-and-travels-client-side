@@ -27,7 +27,7 @@
 .see-packages-btn{
 
     background-color:var(--orange) ;
-color: white;
+    color: white;
     padding: 30px;
     width: 250px;
     border: none;
@@ -57,7 +57,7 @@ color: white;
 
 .offer-section{
     background-color: var(--orange);
-    height: 400px;
+   
 }
 
 .offer-img{

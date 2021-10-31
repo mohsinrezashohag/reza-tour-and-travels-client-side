@@ -37,29 +37,19 @@ const About = () => {
                             So, when it comes to booking your flights and knowing what you need to make the purchase as simple as possible, we have made the online process easy, convenient and secure.
 
                             Enter departure and arrival cities, and select travel dates,
-                            Browse flight options and select your ideal flight,
-                            Insert correct passenger details (as per ID),
-                            Select any additional add-ons like insurance or extra baggage,
-                            Confirm your preferred payment method,
-                            Receive your e-ticket straight to your inbox. Off you go!
+
                         </p>
                     </div>
 
                     <div>
                         <h3>How You Would Be Connected To Us ?</h3>
                         <p>To book your flights online, you will need some basic information of the destination you’ll be flying to, and your departure and return dates. You will, of course, also need all of your personal details that will appear on your flight ticket. To speed up the booking, it’s a good idea to have all of these details at hand.
-
-                            Trip details
-                            Personal information – Full names (to be spelled exactly as it is in your ID or passport), date of birth, country of residence
-                            ID number
-                            Ideal departure times and length of flights (do you prefer a direct flight or are you happy with connections?)
-                            Preferred cabin class
                         </p>
                     </div>
 
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-md-6 pt3 mb-5">
                     <img className="img-fluid" src={AboutImage} alt="" />
                 </div>
 
