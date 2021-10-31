@@ -9,7 +9,7 @@ const MyOrders = () => {
     const [isDeleted, setIsDeleted] = useState(null)
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://eerie-monster-14864.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
 
@@ -30,7 +30,7 @@ const MyOrders = () => {
     const handleDelete = (id) => {
         // console.log(id);
 
-        fetch(`http://localhost:5000/deleteOrder/${id}`, {
+        fetch(`https://eerie-monster-14864.herokuapp.com/deleteOrder/${id}`, {
             method: 'DELETE',
             headers: { 'content-type': 'application/json' },
         })

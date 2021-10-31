@@ -19,7 +19,7 @@ const UpdateOrder = () => {
 
     const onSubmit = data => {
 
-        fetch(`http://localhost:5000/order/update/${id}`, {
+        fetch(`https://eerie-monster-14864.herokuapp.com/order/update/${id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

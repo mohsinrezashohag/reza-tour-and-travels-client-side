@@ -20,8 +20,7 @@ const PackageDetails = () => {
 
     const onSubmit = data => {
 
-
-        fetch('http://localhost:5000/addBooking', {
+        fetch('https://eerie-monster-14864.herokuapp.com/addBooking', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

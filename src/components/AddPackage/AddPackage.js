@@ -8,7 +8,7 @@ const AddPackage = () => {
     const onSubmit = data => {
         console.log(data)
 
-        fetch('http://localhost:5000/addNewPackage', {
+        fetch('https://eerie-monster-14864.herokuapp.com/addNewPackage', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
