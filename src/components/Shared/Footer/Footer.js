@@ -59,8 +59,8 @@ const Footer = () => {
 
 
 
-                            <a class="btn btn-primary" style={{ backgroundColor: '#55acee' }} href="#!" role="button"
-                            ><i class="fab fa-facebook-f"></i><span class="badge bg-danger ms-2">8</span></a
+                            <a className="btn btn-primary" style={{ backgroundColor: '#55acee' }} href="#!" role="button"
+                            ><i className="fab fa-facebook-f"></i><span className="badge bg-danger ms-2">8</span></a
                             >
 
                             <button
@@ -69,10 +69,10 @@ const Footer = () => {
                                 data-mdb-ripple-unbound="true"
                                 style={{ backgroundColor: '#55acee' }}
                             >
-                                <i class="fab fa-instagram"></i>
+                                <i className="fab fa-instagram"></i>
                                 <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                                >+99 <span class="visually-hidden">unread messages</span></span
+                                    className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                >+99 <span className="visually-hidden">unread messages</span></span
                                 >
                             </button>
 
@@ -95,44 +95,6 @@ const Footer = () => {
 
 
 
-
-
-                    {/* 
-
-
-                    <div className="col-md-3  mb-3">
-                        <h5 style={{ textAlign: 'left' }} className="sub-heading mt-5 text-white">Follow Us SocialMedia</h5>
-
-                        // <div class="follow-widget">
-                        //     <h2>Follow Us</h2>
-                        //     <p>Stay updated via social media</p>
-                        //     <ul>
-                        //         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        //         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        //         <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                        //         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        //         <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        //         <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                        //     </ul>
-                        // </div> */}
-
-
-
-                    {/* <ul className="list-unstyled">
-                        {user.displayName ?
-                            <div className="d-flex ms-3">
-                                <h6 className="special-text me-2 pt-2">{user.displayName}</h6>
-                                <Button onClick={logOut} className="btn-danger ">Logout</Button>
-                            </div>
-                            :
-                            <div>
-                                <button className="regular-btn mb-4" type="submit"><i class="fas fa-sign-in-alt"></i> Login Now </button>
-
-                                <h6 className="text-white">Login with Google</h6>
-
-                            </div>
-                        }
-                    </ul> */}
 
 
 

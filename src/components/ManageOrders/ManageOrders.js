@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 
@@ -43,7 +44,10 @@ const ManageOrders = () => {
                                     <td>{order?.bookedBy}</td>
                                     <td>{order?.price} TK</td>
                                     <td>{order?.status === "pending" ? <p className="text-danger">Pending</p> : <p className="text-primary">Approved</p>}</td>
-                                    <td><button className="btn btn-danger">DELETE</button></td>
+                                    <td>
+                                        <button className="btn btn-danger"><i className="fas fa-trash-alt"></i> DELETE</button>
+                                        <Link to={`/updateOrder/${order._id}`}>  <button className="btn btn-success"><i className="fas fa-edit"></i> Update</button> </Link>
+                                    </td>
                                 </tr>)
                         }
 

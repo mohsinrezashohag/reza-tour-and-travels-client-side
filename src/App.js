@@ -14,6 +14,7 @@ import Footer from './components/Shared/Footer/Footer';
 import AddPackage from './components/AddPackage/AddPackage';
 import MyOrders from './components/MyOrders/MyOrders';
 import ManageOrders from './components/ManageOrders/ManageOrders';
+import UpdateOrder from './components/UpdateOrder/UpdateOrder';
 
 
 
@@ -51,6 +52,8 @@ function App() {
               <PackageDetails></PackageDetails>
             </PrivateRouter>
 
+
+
             <PrivateRouter exact path="/purchase">
               <Purchase></Purchase>
             </PrivateRouter>
@@ -61,6 +64,12 @@ function App() {
 
             <PrivateRouter exact path="/manageOrders">
               <ManageOrders></ManageOrders>
+            </PrivateRouter>
+
+
+
+            <PrivateRouter exact path="/updateOrder/:id">
+              <UpdateOrder></UpdateOrder>
             </PrivateRouter>
 
             <Route exact path="/about">

@@ -1,34 +1,53 @@
+import { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import './MyOrders.css'
 
 const MyOrders = () => {
+    // const { orders } = useAuth();
+    const [orders, setOrders] = useState([]);
+    const [isDeleted, setIsDeleted] = useState(null)
 
-    const { orders } = useAuth();
+    useEffect(() => {
+        fetch('http://localhost:5000/orders')
+            .then(res => res.json())
+            .then(data => setOrders(data))
+
+    }, [isDeleted])
+
+
+
+
 
 
     const { allContext } = useAuth();
     const { user } = allContext;
 
     const myOrders = orders?.filter(order => order.bookedBy === user.displayName);
-    console.log(myOrders);
 
-    console.log(myOrders);
 
 
     const handleDelete = (id) => {
-        console.log(id);
+        // console.log(id);
 
         fetch(`http://localhost:5000/deleteOrder/${id}`, {
-            method: 'delete',
+            method: 'DELETE',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify()
         })
             .then(res => res.json())
-            .then(data => {
+            .then((data) => {
 
-                alert("deleted Successfully");
-                window.location.reload();
+                if (data.deletedCount) {
+
+                    setIsDeleted(true)
+
+                }
+                else {
+
+                    setIsDeleted(false)
+                }
+
+
 
             })
 

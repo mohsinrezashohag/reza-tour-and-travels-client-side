@@ -39,11 +39,9 @@ const Login = () => {
         <div>
             <h2 className="section-heading">login to our website</h2>
 
-
-            <div className="login-box">
-
+            <div className="login-box text-center p-4 w-50">
                 <h1><i className="fas fa-user-circle"></i></h1>
-                <Button onClick={handleLoginRedirect} className="p-5 m-5">Google Login</Button>
+                <Button onClick={handleLoginRedirect} className="login-btn"> <span className='inter-button'><i class="fab fa-google"></i> Google Login</span> </Button>
             </div>
         </div>
     );
