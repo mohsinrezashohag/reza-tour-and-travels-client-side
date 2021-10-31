@@ -12,13 +12,15 @@ import Purchase from './components/Purchase/Purchase';
 import PackageDetails from './components/PackageDetails/PackageDetails';
 import Footer from './components/Shared/Footer/Footer';
 import AddPackage from './components/AddPackage/AddPackage';
-import MyOrders from './components/ManageOrders/MyOrder';
+import MyOrders from './components/MyOrders/MyOrders';
+import ManageOrders from './components/ManageOrders/ManageOrders';
+
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
 
       <AuthProvider>
 
@@ -55,6 +57,10 @@ function App() {
 
             <PrivateRouter exact path="/myOrders">
               <MyOrders></MyOrders>
+            </PrivateRouter>
+
+            <PrivateRouter exact path="/manageOrders">
+              <ManageOrders></ManageOrders>
             </PrivateRouter>
 
             <Route exact path="/about">

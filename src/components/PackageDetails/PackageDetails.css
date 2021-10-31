@@ -18,6 +18,7 @@
 }
 
 .section-heading{
+    text-align: center;
     color: var(--orange);
     text-transform: uppercase;
     margin: 50px 0px;;

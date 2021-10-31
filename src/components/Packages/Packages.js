@@ -12,7 +12,6 @@ const Packages = () => {
     return (
         <div>
             <h2 className="section-heading">Our Services</h2>
-            {packages.length}
 
             <div className="pakages-griding">
                 {packages.map((pack, index) => <Package index={index} key={pack._id} pack={pack}></Package>)}

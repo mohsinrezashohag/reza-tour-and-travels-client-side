@@ -1,3 +1,60 @@
-.home{
+/* .home{
     background-color: green;
+} */
+
+
+.banner{
+    background: rgba(0, 0, 0, 0.2)url(../../images/banner.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+.banner-text{
+    color: white;
+    text-align: left;
+    margin: 90px 0px;
+}
+
+.banner-text h1{
+    font-size: 80px;
+    font-weight: 600;
+
+}
+.banner-text p{
+    font-size: 20px;
+    color: black;
+}
+
+.cosult-btn{
+
+    background-color:var(--orange) ;
+  
+    padding: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+}
+
+.offer-text{
+    background-image: url(../../images/stephan-mahlke-lOrfvkBNEsE-unsplash.jpg);
+    background-size: cover;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    
+}
+
+
+
+.offer-section{
+    background-color: var(--orange);
+    height: 400px;
+}
+
+.offer-img{
+    width: 50%;
 }

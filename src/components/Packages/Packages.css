@@ -1,7 +1,9 @@
-.pakages-griding{
+
+  .pakages-griding{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-}
+  }
+
 
 .single-package{
  border-radius: 15px;
@@ -18,3 +20,12 @@
 .package-image{
     border-radius: 15px;
 }
+
+
+/* media query for responsive */
+
+  @media (max-width:600px)  {  
+   .pakages-griding{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+} }

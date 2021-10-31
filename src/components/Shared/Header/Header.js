@@ -9,20 +9,20 @@ const Header = () => {
 
     const { user, logOut } = useFirebase();
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" variant="light" id="navbar">
+        <div >
+            <Navbar collapseOnSelect expand="lg" id="navbar" style={{ textAlign: 'center' }}>
                 <Container>
-                    <Link to="/home" className="navbar-brand"><img width="100px" src={logo} alt="" /></Link>
+                    <Link to="/" className="navbar-brand text-white"><img width="70px" src={logo} alt="" /></Link>
 
-                    {/* <Navbar.Brand href="#home">REZA TOUR & TRAVELS</Navbar.Brand> */}
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
 
 
 
+                            <Link to="/home" className=" nav-link">Home</Link>
                             <Link to="/packages" className=" nav-link">Packages</Link>
-                            <Link to="/purchase" className=" nav-link">Purchase</Link>
+                            <Link to="/manageOrders" className=" nav-link">Manage Orders</Link>
                             <Link to="/about" className=" nav-link">About</Link>
 
 
@@ -36,14 +36,15 @@ const Header = () => {
 
                         <Nav>
 
-                            <img className="header-img" src={user.photoURL} alt="" />
+                            {user?.displayName ? <img className="header-img mx-auto " src={user?.photoURL} alt="" /> : ""}
+
 
                             {user?.displayName ?
 
 
 
 
-                                <DropdownButton id="dropdown-basic-button" title={user?.displayName}>
+                                <DropdownButton className="mx-1 my-1" id="dropdown-basic-button" title={user?.displayName}>
 
 
 
@@ -61,28 +62,6 @@ const Header = () => {
 
 
                                 </DropdownButton>
-
-
-
-
-
-                                // <NavDropdown className="nav-drop" title={user.displayName} id="collasible-nav-dropdown">
-
-
-                                //     <Link to="/myOrders">
-                                //         <button className=" bg-secondary text-white">My Orders</button>
-                                //     </Link>
-
-
-                                //     <Link to="/addPackage">
-                                //         <button className=" bg-secondary text-white">Add Another Package</button>
-                                //     </Link>
-
-                                //     <Button onClick={logOut} className="btn-danger ">Logout</Button>
-
-
-                                // </NavDropdown>
-                                // <div className="d-flex justify-content-center align-items-center" >  <img className="header-img" src={user.photoURL} alt="" /><p>{user.displayName}</p>    <Button onClick={logOut} className="btn-danger ">Logout</Button> </div>
 
                                 :
 
