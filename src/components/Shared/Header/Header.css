@@ -1,0 +1,20 @@
+.header-img{
+    width: 50px;
+    padding: 0 4px;
+    border-radius: 50%;
+}
+
+.navbar{
+    background-color: var(--orange);
+    color: white;
+}
+
+.dp-item{
+    width: 140px;
+   background-color: var(--orange);
+}
+
+.logout-btn{
+    width: 140px;
+}
+

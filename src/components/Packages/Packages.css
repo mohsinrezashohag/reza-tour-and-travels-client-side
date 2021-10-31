@@ -1,0 +1,20 @@
+.pakages-griding{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.single-package{
+ border-radius: 15px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.package-text{
+    text-align: left;
+    margin: 15px 15px;
+}
+
+.package-image{
+    border-radius: 15px;
+}

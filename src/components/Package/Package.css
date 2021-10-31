@@ -1,0 +1,8 @@
+.see-book-btn{
+    background-color: var(--orange);
+    color: white;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+}
