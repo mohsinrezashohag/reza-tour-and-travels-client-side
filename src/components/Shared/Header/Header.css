@@ -5,13 +5,13 @@
 }
 
 .navbar{
-    background-color: var(--orange);
+    background-color: var(--black);
     color: white;
 }
 
 .dp-item{
     width: 140px;
-   background-color: var(--orange);
+   background-color: var(--black);
 }
 
 .logout-btn{

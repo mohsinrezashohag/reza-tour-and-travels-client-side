@@ -26,7 +26,7 @@
 
 .see-packages-btn{
 
-    background-color:var(--orange) ;
+    background-color:var(--black) ;
     color: white;
     padding: 30px;
     width: 250px;
@@ -40,7 +40,7 @@
     padding: 30px;
     margin: 20px;
     border-radius: 15px;
-    color: var(--orange);
+    color: var(--black);
     
 }
 .offer-text-two{
@@ -49,14 +49,14 @@
     padding: 30px;
     margin: 20px;
     border-radius: 15px;
-    color: var(--orange);
+    color: var(--black);
     
 }
 
 
 
 .offer-section{
-    background-color: var(--orange);
+    background-color: var(--black);
    
 }
 
