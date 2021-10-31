@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutImage from '../../images/bali-bg.jpg'
+import coxbazarImg from '../../images/cox-bazar.jpg'
 
 const About = () => {
     return (
@@ -50,7 +51,8 @@ const About = () => {
                 </div>
 
                 <div className="col-md-6 pt3 mb-5">
-                    <img className="img-fluid" src={AboutImage} alt="" />
+                    <img className="img-fluid" src={coxbazarImg} alt=""
+                    />
                 </div>
 
             </div>
