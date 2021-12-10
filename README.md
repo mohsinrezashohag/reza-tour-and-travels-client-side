@@ -1,15 +1,11 @@
-# Reza Tour & Travels(React,Node,MongoDb) 
-This project mainly developed as assignment with react and for backend i used node & express js .
+# Reza Tour & Travels
 
-## Why this is important to me ? 
-this project is very important to me because I started learning node & express js about few days ago and this is my first dedicated node  project as assignment.
-So far i have tried my best from my side.
+## A Online based Travel Agency's full stack website with various features like :
 
-### purpose
+Visitors will be able to show the home page & add packages page and few more but add packages are only available for logged in users so visitors will redirect to the login page.
 
-This project is mainly developed on basis of fake data,fake information and location which I have collected from the internet and few of them I written just randomly so never take this data seriously. its just for assignment purpose.
+A logged in user will get option to booked packages ,add new packages and he/she will see packages booking by them and they will be able to remove booking
 
+## Data's are stored into mongoDB database.
 
-
-## Note
-This Project is not a professional one it's just created for assignment & practice purpose
+Technology Used : React Js,Node Js, Mongodb Database, Firebase Authentication, React Router, HTML, CSS, React Bootstrap
